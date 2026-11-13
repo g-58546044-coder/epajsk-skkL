@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-PAJSK SKKL</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef5ff;
+      color: #17365d;
+    }
+    header {
+      background: #1455a0;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+    }
+    header h1 { margin: 0 0 8px; }
+    main {
+      max-width: 480px;
+      margin: 35px auto;
+      padding: 25px;
+    }
+    .panel {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #17365d18;
+    }
+    label { display: block; margin-top: 16px; }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 7px;
+      border: 1px solid #b8cce5;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 13px;
+      border: 0;
+      border-radius: 7px;
+      background: #1455a0;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer { text-align: center; color: #62758e; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>e-PAJSK SKKL</h1>
+    <p>Sistem Semakan dan Pengesahan PAJSK Murid</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Log Masuk Ibu Bapa</h2>
+      <p>Sila masukkan maklumat anak untuk meneruskan.</p>
+
+      <label for="nama">Nama Penuh Anak</label>
+      <input id="nama" type="text" placeholder="Masukkan nama penuh anak">
+
+      <label for="kataLaluan">Kata Laluan</label>
+      <input id="kataLaluan" type="password" placeholder="Masukkan kata laluan">
+
+      <button type="button" onclick="paparMesej()">Log Masuk</button>
+      <p id="mesej" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© SKKL | e-PAJSK</p>
+  </footer>
+
+  <script>
+    function paparMesej() {
+      document.getElementById("mesej").textContent =
+        "Paparan percubaan sahaja. Sistem log masuk sebenar belum disambungkan.";
+    }
+  </script>
+</body>
+</html>
